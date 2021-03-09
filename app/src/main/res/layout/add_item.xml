@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="340dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="연락처 등록"
+            android:textColor="@color/black"
+            android:textSize="40dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_person"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <EditText
+            android:id="@+id/et_name"
+            android:hint="Contact Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/et_email"
+            android:hint="Contact Email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_close"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/custom_button"
+            android:text="닫기"
+            app:layout_constraintEnd_toStartOf="@+id/btn_insert"
+            app:layout_constraintTop_toTopOf="@+id/btn_insert" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_insert"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_button"
+            android:text="등록"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
